@@ -1,0 +1,188 @@
+﻿body {
+    font-family: 'heebo';
+    background-color: #F2DBD3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.notActive {
+    cursor: not-allowed;
+    color: grey;
+}
+
+.mainNav {
+    text-align: center;
+    background-color: #F2DBD3;
+    width: 100%;
+    height: 50px;
+    direction: rtl;
+    z-index: 1000;
+    margin-bottom: 20px;
+}
+
+    .mainNav > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mainNav li {
+        font-size: 100%;
+        font-family: 'Gveret Levin AlefAlefAlef';
+        position: relative;
+    }
+
+    .mainNav ul li a {
+        display: block;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #F2DBD3;
+        color: #48311F;
+        transition: background-color 0.3s ease;
+        font-size: 18px;
+    }
+
+        .mainNav ul li a:hover {
+            background-color: #AABC95;
+        }
+
+h1 {
+    color: green;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#cocktailForm {
+    width: 300px;
+    margin: 20px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    direction: rtl;
+    text-align: right;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Heebo';
+}
+
+legend {
+    font-weight: bold;
+    color: green;
+}
+
+#Extras {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+    button.disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
+#confirmationMessage {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #F2DBD3;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .images.alcohol img {
+        display: none; /* התמונות של האלכוהול יהיו מוסתרות עד לבחירה */
+    }
+
+    .images img {
+        width: 60px;
+        height: 170Px;
+        margin: 10px;
+        transition: opacity 0.5s;
+    }
+
+.faded {
+    opacity: 0.5;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #F2DBD3;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    direction: rtl;
+    font-family: Heebo;
+}
+
+.close-button {
+    background-color: #fefefe;
+    color: #333;
+    border: 1px solid #888;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+    .close-button:hover,
+    .close-button:focus {
+        background-color: #ddd;
+    }
